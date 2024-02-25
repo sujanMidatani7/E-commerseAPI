@@ -41,6 +41,12 @@ app.get('/api/categories', async (req, res) => {
 
 app.get('/api/products/category/:categoryId', async (req, res) => {
     try {
+        /**
+         * Retrieves products based on the specified category ID.
+         *
+         * @param {number} req.params.categoryId - The ID of the category.
+         * @returns {Promise<Array>} - A promise that resolves to an array of products.
+         */
         const products = await db.products.findAll({
             where: { categoryId: req.params.categoryId }
         });
