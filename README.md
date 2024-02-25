@@ -28,7 +28,7 @@ npm (Node Package Manager)
 Clone the repository:
 ```
 git clone https://github.com/sujanMidatani7/E-commerseAPI.git
-cd ecommerce-api
+cd E-commerceAPI
 ```
 **Install NPM packages:**
 
